@@ -1,0 +1,19 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+            <img src="{{ about.image }}" class="arch-img" alt="Catering Heritage">
+        </div>
+        <div class="col-lg-6">
+            <h2 class="display-4 fw-bold mb-4">{{ about.title }}</h2>
+            <p class="lead">{{ about.description }}</p>
+            <div class="mt-4 p-4 bg-white border-start border-4 border-warning shadow-sm">
+                <h5 class="fw-bold">{{ about.highlight.title }}</h5>
+                <p class="small text-muted mb-0">{{ about.highlight.text }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

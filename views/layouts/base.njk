@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pageTitle }} | {{ site.name }}</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    {% if DEV_MODE %}
+        <!-- Development: Vite injects HMR -->
+        <script type="module" src="http://localhost:5173/@vite/client"></script>
+        <link rel="stylesheet" href="http://localhost:5173/styles/main.css">
+    {% else %}
+        <!-- Production: Built assets -->
+        <link rel="stylesheet" href="/assets/main.css">
+    {% endif %}
+    
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% include "partials/header.njk" %}
+    
+    {% block content %}{% endblock %}
+    
+    {% include "partials/footer.njk" %}
+    
+    {% if DEV_MODE %}
+        <script type="module" src="http://localhost:5173/scripts/main.js"></script>
+    {% else %}
+        <script type="module" src="/assets/main.js"></script>
+    {% endif %}
+    
+    {% block scripts %}{% endblock %}
+</body>
+</html>

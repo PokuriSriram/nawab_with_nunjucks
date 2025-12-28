@@ -1,0 +1,87 @@
+{
+    "site": {
+        "name": "Nawabi Kitchens",
+        "tagline": "Bespoke heritage catering for elite celebrations",
+        "year": 2025
+    },
+    "hero": {
+        "title": "Royal Indian Feast",
+        "subtitle": "Bespoke heritage catering for elite celebrations.",
+        "ctaText": "INQUIRE NOW",
+        "ctaLink": "/contact",
+        "backgroundImage": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1260"
+    },
+    "dishes": [
+        {
+            "id": 1,
+            "name": "Nizami Dum Biryani",
+            "image": "/images/1.jpg",
+            "alt": "Biryani"
+        },
+        {
+            "id": 2,
+            "name": "Murgh Makhani",
+            "image": "/images/2.jpg",
+            "alt": "Butter Chicken"
+        },
+        {
+            "id": 3,
+            "name": "Seekh Kebab Platter",
+            "image": "/images/3.jpg",
+            "alt": "Kebabs"
+        },
+        {
+            "id": 4,
+            "name": "Saffron Gulab Jamun",
+            "image": "/images/4.jpg",
+            "alt": "Dessert"
+        },
+        {
+            "id": 5,
+            "name": "Paneer Tikka",
+            "image": "/images/8.jpg",
+            "alt": "Paneer"
+        },
+        {
+            "id": 6,
+            "name": "Butter Garlic Naan",
+            "image": "/images/5.jpg",
+            "alt": "Naan"
+        },
+        {
+            "id": 7,
+            "name": "Samosa Chaat",
+            "image": "/images/6.jpg",
+            "alt": "Chaat"
+        },
+        {
+            "id": 8,
+            "name": "Classic Dal Makhani",
+            "image": "/images/7.jpg",
+            "alt": "Dal"
+        }
+    ],
+    "about": {
+        "title": "Our Heritage",
+        "description": "We preserve the purity of spices while delivering world-class service standards.",
+        "highlight": {
+            "title": "Artisanal Sourcing",
+            "text": "Every ingredient is sourced from organic farms dedicated to heritage crops."
+        },
+        "image": "/images/9.jpg"
+    },
+    "navigation": [
+        {
+            "label": "Home",
+            "href": "/"
+        },
+        {
+            "label": "About",
+            "href": "/about"
+        },
+        {
+            "label": "Contact",
+            "href": "/contact"
+        }
+    ]
+}

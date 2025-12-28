@@ -1,0 +1,35 @@
+{% extends "layouts/base.njk" %}
+
+{% block head %}
+<style>
+    .hero-banner {
+        background: linear-gradient(rgba(2, 48, 32, 0.7), rgba(2, 48, 32, 0.7)), 
+                    url('{{ hero.backgroundImage }}');
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        color: var(--rose-gold);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<header class="hero-banner text-center">
+    <div class="container py-5">
+        <h1 class="display-1 fw-bold">{{ hero.title }}</h1>
+        <p class="fs-4 mb-5">{{ hero.subtitle }}</p>
+        <a href="{{ hero.ctaLink }}" class="btn btn-lg px-5 py-3" 
+           style="background: var(--rose-gold); color: var(--emerald); border-radius: 0; font-weight: bold;">
+            {{ hero.ctaText }}
+        </a>
+    </div>
+</header>
+
+<section class="container py-5">
+    <div class="row g-4">
+        {% for dish in dishes %}
+            {% include "partials/dish-card.njk" %}
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

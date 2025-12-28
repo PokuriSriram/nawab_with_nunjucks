@@ -1,0 +1,83 @@
+@import './variables.css';
+
+body {
+    background-color: var(--soft-ivory);
+    color: var(--emerald);
+    font-family: 'Georgia', serif;
+}
+
+.navbar {
+    background: var(--emerald) !important;
+    border-bottom: 2px solid var(--rose-gold);
+}
+
+.nav-link {
+    color: var(--rose-gold) !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Dish Cards */
+.dish-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 120px 120px 0 0;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    transition: 0.4s ease-in-out;
+    background: #fff;
+}
+
+.dish-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.dish-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+
+.dish-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--emerald);
+    color: var(--rose-gold);
+    padding: 15px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-top: 2px solid var(--rose-gold);
+}
+
+.dish-card:hover .dish-info {
+    transform: translateY(0);
+}
+
+.hero-banner {
+    background-size: cover;
+    padding: 100px 0;
+    color: var(--rose-gold);
+}
+
+/* About Page */
+.arch-img {
+    border-radius: 200px 200px 0 0;
+    border: 4px solid var(--rose-gold);
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Contact Page */
+.form-box {
+    background: white;
+    border-radius: 40px 0;
+    border-right: 12px solid var(--emerald);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
