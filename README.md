@@ -101,22 +101,6 @@ Node.js + Express
 
 Git & GitHub
 
-📁 Project Structure
-
-├── src/
-│   ├── pages/          # Nunjucks page templates
-│   ├── layouts/        # Base layout
-│   ├── partials/       # Navbar, footer, reusable UI
-│   ├── assets/
-│   │   ├── css/
-│   │   └── js/
-│   └── data/           # Optional JSON data
-├── public/
-├── server.js           # Express server
-├── vite.config.js
-├── package.json
-└── README.md
-
 ▶️ How to Run the Project (Execution Steps)
 Prerequisites
 
