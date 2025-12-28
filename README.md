@@ -102,7 +102,7 @@ Node.js + Express
 Git & GitHub
 
 📁 Project Structure
-.
+
 ├── src/
 │   ├── pages/          # Nunjucks page templates
 │   ├── layouts/        # Base layout
